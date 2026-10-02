@@ -52,7 +52,7 @@ type t1_2a = Bool -> a -> a -> a
 
 
 t1_2b := \x:(a -> a). x
-type t1_2b = (a -> a) -> (a -> a)
+type t1_2b = (a -> a) -> a -> a 
 
 t1_2c := \x. x
 type t1_2c = a -> a
@@ -76,10 +76,10 @@ t1_3a := \x. x K I x
 type t1_3a = none
 
 t1_3b := \f. f 1 + f true
-type t1_3b = f f 1 f true
+type t1_3b = none
 
 t1_3c := \f. f 1 + f 2
-type t1_3c = f f 1 f 2
+type t1_3c = (Int -> Int) -> Int
 
 
 task 1.4 (население: базовые типы)
