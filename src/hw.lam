@@ -37,7 +37,7 @@ t1_1b := \b. if b 0 1
 type t1_1b = Bool -> Int
 
 t1_1c := \f x. if (f x) x (x + 1)
-type t1_1c = Int -> Int
+type t1_1c = (Int -> Bool) -> Int -> Int
 
 t1_1d := true + 1
 type t1_1d = none
