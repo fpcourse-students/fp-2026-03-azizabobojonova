@@ -87,11 +87,11 @@ task 1.4 (население: базовые типы)
 -- их после двоеточия. αβη-эквивалентные термы не считаются. Если обитателей нет — `none`.
 -- Формат: `inhabit T: n1, n2`; число в скобках после типа — сколько обитателей нужно найти.
 
-inhabit a -> a: \x. x
+inhabit a -> a: I
 
-inhabit a -> a -> a (2): \x. \y. x, \x. \y. y
+inhabit a -> a -> a (2): K, K'
 
-inhabit a -> b -> a: \x. \y. x
+inhabit a -> b -> a: K
 
 inhabit a: none
 
