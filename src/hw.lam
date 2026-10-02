@@ -40,7 +40,7 @@ t1_1c := \f x. if (f x) x (x + 1)
 type t1_1c = Int -> Int
 
 t1_1d := true + 1
-type t1_1d = TypeError
+type t1_1d = none
 
 
 task 1.2 (наиболее общий тип: буквы и константы)
