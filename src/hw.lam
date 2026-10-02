@@ -95,7 +95,11 @@ inhabit a -> b -> a: K
 
 inhabit a: none
 
-inhabit Int (2): 0, 1
+inhabit Int (2): none
+
+zero := 0
+one  := 1
+inhabit Int (2): zero, one
 
 
 -- ============================================================
